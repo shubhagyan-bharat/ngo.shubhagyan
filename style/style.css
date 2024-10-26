@@ -1,10 +1,9 @@
 :root {
-  --bg: #fff;
-  --bg-sec: #16096f;
-  --txt-color: rgb(228, 162, 162);
-
-  --white: #efeaea;
-  --theme-color: #071e6b;
+  --bg: #ffffff;
+  --bg-sec: #8c0563c6;
+  --txt-color: #3a1a31fe;
+  --white: #f1dede;
+  --theme-color: #f209ac;
 }
 
 ::-moz-selection {
@@ -114,15 +113,8 @@ nav span a:hover {
   border-radius: 20%;
   object-fit: cover;
   object-position: 25% 25%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
-.profile-picture:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
+
 
 #stats-data p {
   font-size: 1.2em;
