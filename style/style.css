@@ -1,19 +1,8 @@
 :root {
   --bg: #ffffff;
-  --bg-sec: #8c0563c6;
-  --txt-color: #3a1a31fe;
-  --white: #f1dede;
-  --theme-color: #f209ac;
-}
-
-::-moz-selection {
-  color: var(--theme-color);
-  background-color: var(--white);
-}
-
-::selection {
-  color: var(--theme-color);
-  background-color: var(--white);
+  --bg-sec: #e0d9e7;
+  --txt-color: #19374b;
+  --theme-color: #b00609;
 }
 
 body {
@@ -32,7 +21,8 @@ nav span {
   color: var(--theme-color);
   transition: 1.5s;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 1em;
+  font-weight: bolder;
 }
 
 nav span:after {
@@ -138,4 +128,65 @@ a:hover {
   font-size: 2em;
   color: var(--theme-color);
   transition: 1.5s;
+}
+
+#contact-form input,
+textarea {
+  border: 0 !important;
+  box-shadow: none !important;
+  background-color: var(--bg-sec) !important;
+  color: var(--txt-color) !important;
+}
+
+#contact-form input:focus,
+textarea:focus {
+  background-color: var(--bg-sec) !important;
+  color: var(--txt-color) !important;
+}
+#submit {
+  border: 1px solid var(--theme-color);
+  color: var(--theme-color);
+}
+#submit:hover {
+  background-color: var(--theme-color);
+  color: white;
+}
+#response-text {
+  font-size: 1rem;
+  transition: 1.5s;
+  color: #151414;
+}
+
+.email-text {
+  font-size: 1em;
+  transition: 1.5s;
+  color: var(--theme-color);
+}
+
+#social-icon-links img {
+  margin: 4px;
+  cursor: pointer;
+}
+#social-icon-links a:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+#social-icon-links a:hover {
+  opacity: 0.6;
+}
+#social-icon-links ul {
+  list-style-type: none;
+}
+#social-icon-links ul li {
+  float: left;
+}
+#social-icon-links ul li a {
+  all: unset;
+}
+
+.copy-right-text {
+  font-size: 0.8em;
+  transition: 1.5s;
+  color: var(--theme-color);
 }

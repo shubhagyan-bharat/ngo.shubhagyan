@@ -6,6 +6,12 @@
     <title>Shubhagyan</title>
 
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="./res/logo.png"
+    />
+
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
@@ -92,7 +98,114 @@
           <span class="text-center mb-4 section-title">Statistics</span>
           <div class="row justify-content-center" id="stats-data"></div>
         </section>
+        <hr />
       </main>
+
+      <footer class="container">
+        <section id="contact" class="row justify-content-center">
+          <span class="section-title text-center mb-4">Contact</span>
+          <form id="contact-form" class="col-md-10 col-lg-6">
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="Email"
+                name="Email"
+                placeholder="name@example.domain"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="Message"
+                name="Request"
+                rows="3"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <button id="submit" type="submit" class="btn">Send</button>
+            <span id="response-text"></span>
+          </form>
+  
+          <div class="col-md-10 col-lg-6 justify-content-center mt-5">
+            <div class="row">
+              <p>
+                <img title="email icon" src="./res/email.svg" alt="Email icon" />
+                &nbsp;Email:
+                <a
+                  href="mailto:sohelsayyed1235@gmail.com"
+                  title="email"
+                  class="email-text"
+                >
+                </a>
+              </p>
+            </div>
+            <div class="row" id="social-icon-links">
+              <ul>
+                <li>
+                  <a
+                    rel="noopener"
+                    href=""
+                    target="_blank"
+                    title="Instagram"
+                  >
+                    <img
+                      alt="Instagram icon"
+                      title="Instagram"
+                      src="./res/instagram.svg"
+                      class="svg-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    href=""
+                    target="_blank"
+                    title="GitHub"
+                  >
+                    <img
+                      title="GitHub"
+                      src="./res/github.svg"
+                      class="svg-icon"
+                      alt="GitHub icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    href=""
+                    target="_blank"
+                    title="Telegram"
+                  >
+                    <img
+                      alt="Telegram icon"
+                      title="Telegram"
+                      src="./res/telegram.svg"
+                      class="svg-icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="text-center">
+              Copyright © -
+              <a
+                rel="noopener"
+                href=""
+                target="_blank"
+                class="copy-right-text"
+                title="Home-Page"
+                ></a
+              >
+            </p>
+          </div>
+        </section>
+      </footer>
+
     <script src="./script/stats.js"></script>
     <script src="./script/typeing.js"></script>
   </body>
